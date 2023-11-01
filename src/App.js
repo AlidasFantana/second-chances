@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './app.css';
 
-function App() {
+function LinkTree() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flexContainer">
+      <div className="box">
+        <iframe title="embedded-content" className="iframeStyle" src="URL_OF_THE_EMBEDDED_CONTENT"></iframe>
+        {/* Add other content like links, images, etc. here */}
+      </div>
     </div>
   );
 }
 
-export default App;
+export default LinkTree;
