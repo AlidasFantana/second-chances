@@ -1,42 +1,115 @@
-.flexContainer {
+/* Style Settings */
+body {
+  background-color: #181818;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  min-width: 0px;
 }
 
-.box {
-  min-width: 0px;
-  padding-bottom: 48px;
-  padding-top: 16px;
-  width: 342px;
+.Bottom-Section {
+  margin: auto;
+  width: 50%;
+  align-items: center;
 }
 
-@media screen and (min-width: 320px) {
-  .box {
-    width: 342px;
-    padding-bottom: 48px;
-  }
+#userPhoto {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 45px auto 30px;
+  border-radius: 50%;
+  border: solid #e6e6e6 2px;
+  box-shadow: 0px 7px 15px rgba(20, 20, 20, 0.5);
+}
+#userPhoto:hover {
+  width: 200px;
+  height: 200px;
 }
 
-@media screen and (min-width: 768px) {
-  .box {
-    width: 390px;
-    padding-bottom: 64px;
-  }
+#userName {
+  color: #fff;
+  font-size: 25px;
+  display: block;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
 }
 
-@media screen and (min-width: 955px) {
-  .box {
-    width: 390px;
-    padding-bottom: 64px;
-  }
+#links {
+  max-width: 600px;
+  width: auto;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.iframeStyle {
-  aspect-ratio: 0.5625 / 1;
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
+.link {
+  display: block;
+  background-color: #e6e6e6;
+  color: #1c1c1c;
+  font-family: inherit;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 20px;
+  border: solid #e6e6e6 2px;
+  box-shadow: 0px 7px 15px rgba(20, 20, 20, 0.5);
+}
+
+.link:hover {
+  background-color: #1c1c1c;
+  color: #e6e6e6;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  margin: auto;
+  width: 60%;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+  color: #bbb;
+  opacity: 0.6;
+  height: 30px;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: black;
+  opacity: 1.6;
+}
+
+p {
+  text-align: center;
+  color: #bbb;
+}
+
+h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+h1 span {
+  transition: 0.5s linear;
+}
+
+h1:hover span {
+  color: wheat;
+  text-shadow: 0 0 10px #fff, 0 0 20px black, 0 0 40px whitesmoke;
 }
