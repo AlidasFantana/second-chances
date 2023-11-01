@@ -1,15 +1,25 @@
 import React from 'react';
-import './app.css';
+import './App.css';
 
-function LinkTree() {
+function App() {
   return (
-    <div className="flexContainer">
-      <div className="box">
-        <iframe title="embedded-content" className="iframeStyle" src="URL_OF_THE_EMBEDDED_CONTENT"></iframe>
-        {/* Add other content like links, images, etc. here */}
+    <div className="linktree-container">
+      <div className="linktree-header">
+        <img src="path_to_your_logo.png" alt="Your Brand Logo" className="brand-logo" />
+        <h1>Your Brand Name</h1>
+      </div>
+      <div className="linktree-links">
+        <a href="https://your-link-1.com" target="_blank" rel="noopener noreferrer" className="linktree-link">Link 1</a>
+        <a href="https://your-link-2.com" target="_blank" rel="noopener noreferrer" className="linktree-link">Link 2</a>
+        <a href="https://your-link-3.com" target="_blank" rel="noopener noreferrer" className="linktree-link">Link 3</a>
+        {/* Add more links as needed */}
+      </div>
+      <div className="linktree-footer">
+        <p>Follow us on social media!</p>
+        {/* Add social media icons/links here */}
       </div>
     </div>
   );
 }
 
-export default LinkTree;
+export default App;
